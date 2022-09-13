@@ -1,11 +1,31 @@
+
 customer_name = input("Welcome, what is your name?:")
+
 starting_balance = 5000.25
 
-print(f"Hello {customer_name}, your starting balance is ${starting_balance}.")
 
-pay_check = int(input("How much of you paycheck would you like to deposit? $"))
+def checking_balance(user_name, balance):
+   
+    print(f"Hello {user_name}, your starting balance is ${balance}")
+    
+checking_balance(customer_name, starting_balance)
 
+pay_check = int(input("How much of your paycheck would you like to deposit? $"))
 expenditure_item = input("Looks like you went shopping. What did you buy? ")
 expenditure = int(input(f"How much does {expenditure_item} cost? $"))
 
-def checking_balance(user_name, balance, deposits, expense_item, expense_amount)
+def checking_balance2(user_name, balance, deposits, expense_item, expense_amount):
+    ending_balance = balance + deposits - expense_amount 
+    print(f"Good day, {user_name}. After spending money on {expense_item} in the amount of ${expense_amount}, your curent checkin balance is ${ending_balance}.")
+
+checking_balance2(customer_name, starting_balance, pay_check, expenditure_item, expenditure)
+
+
+# print(f"Good day, {user_name}. After spending money on {expense_item} in the amount of {expense_amount}, your checking balance is " + balance - expense_amount)
+# checking_balance(customer_name, starting_balance, pay_check, expenditure_item, expenditure)
+
+
+
+
+
+
