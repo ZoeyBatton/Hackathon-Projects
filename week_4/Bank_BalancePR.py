@@ -19,13 +19,3 @@ def checking_balance2(user_name, balance, deposits, expense_item, expense_amount
     print(f"Good day, {user_name}. After spending money on {expense_item} in the amount of ${expense_amount}, your curent checkin balance is ${ending_balance}.")
 
 checking_balance2(customer_name, starting_balance, pay_check, expenditure_item, expenditure)
-
-
-# print(f"Good day, {user_name}. After spending money on {expense_item} in the amount of {expense_amount}, your checking balance is " + balance - expense_amount)
-# checking_balance(customer_name, starting_balance, pay_check, expenditure_item, expenditure)
-
-
-
-
-
-
