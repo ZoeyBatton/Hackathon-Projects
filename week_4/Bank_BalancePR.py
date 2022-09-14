@@ -10,9 +10,9 @@ def checking_balance(user_name, balance):
     
 checking_balance(customer_name, starting_balance)
 
-pay_check = int(input("How much of your paycheck would you like to deposit? $"))
+pay_check = float(input("How much of your paycheck would you like to deposit? $"))
 expenditure_item = input("Looks like you went shopping. What did you buy? ")
-expenditure = int(input(f"How much does {expenditure_item} cost? $"))
+expenditure = float(input(f"How much does {expenditure_item} cost? $"))
 
 def checking_balance2(user_name, balance, deposits, expense_item, expense_amount):
     ending_balance = balance + deposits - expense_amount 
